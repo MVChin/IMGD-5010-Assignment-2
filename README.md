@@ -6,13 +6,18 @@ The pattern will have three colours:  a background colour and three contrast col
 The steps are as follows:
 
 1.  Create a square canvas using the background colour.
-2.  Using contrast colour 1, create a half circle on the top of the canvas.  The half circle will be
-    a. centred on the top edge
-    b. the diameter will lie on the top edge
-    c. the diameter will be half the width of the canvas
-3.  Repeat creating a half circle on the other three edges of the canvas.
-4.  Add 2 diagonal lines in contrast colour 2.  The diagonal line 1 will run from upper left hand corner to bottom right and the other will run in opposite direction; from the top rignt had corner to the bottom left.
-5.  Create the centre or focal point of the pattern.
+2.  Using contrast colour 1, create a circle on the top of the canvas.  The circle will be
+    3.  centred on the top edge
+    4.  the diameter will lie on the top edge
+    5.  the diameter will be half the width of the canvas
+    6.  this will result in a visible half circle within the canvas along the top of the canvas.  The centres of the circles will therefore be
+        7.      (half canvas width, 0)
+        8.  (0, half canvas heoght)
+        9.  (half canvas width, canvas height)
+        10.  (canvas width, half canvas height)  
+4.  Repeat creating circles on the other three edges of the canvas with matching orientations.  
+5.  Add 2 diagonal lines in contrast colour 2.  The diagonal line 1 will run from upper left hand corner to bottom right and the other will run in opposite direction; from the top rignt had corner to the bottom left.
+6.  Create the centre or focal point of the pattern.
     1.  Using contrast colour 3, create a circle in the centre of the canvas whose diameter is 3/4 or 75% of the canvas width
     2.  Shift the origin of the canvas to be the centre of the canvas.  This will move the coordite system origin from (0,0) to (half canvas width, half canvas height).  This will allow for the rotation of the next two elements to be mathematically easier to implement when coding.
     3.  Rotate the canvas clockwise 45 degrees.
