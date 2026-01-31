@@ -1,0 +1,49 @@
+//This will set up and draw the foundation for a tile pattern.  The entire canvas will be used.  The background colour is white, contrast colour 1 is teal, contrast colour 2 is black, contrast colour 3 is orange.  The elements are placed from the back forward
+//
+
+function setup() {
+  createCanvas(500, 500);
+  noStroke();
+  fill("teal");
+  circle(0, 250, 250); //half circle at midpoint on the left//
+  circle(250, 0, 250); //half circle at midpoint on the top//
+  circle(250, 500, 250); //half circle at midpoint on the bottom//
+  circle(500, 250, 250); //half cicle at midpoint on the right//
+
+  //change the colour and add lines to bind the pattern//
+  fill("black");
+  stroke("black");
+  strokeWeight("5");
+  line(0, 0, 500, 500);
+  line(500, 0, 0, 500);
+
+  //Place the centre medallion//
+
+  //background circle//
+  fill("orange");
+  noStroke();
+  circle(250, 250, 375);
+
+  //flower petals//
+  fill("teal");
+  //shift origin to make petal rotation easier//
+  translate(250, 250);
+  angleMode(DEGREES);
+  rotate(45);
+  ellipse(0, 0, 300, 100);
+  rotate(-90); //rotate back the origial 45 degrees then an addition 45 degrees//
+  ellipse(0, 0, 300, 100);
+  //return to the original orientation//
+  rotate(45);
+  fill("black");
+  translate(-250, -250);
+  //Draw the last few accents
+  circle(250, 250, 100);
+  ellipse(250, 125, 10, 50); //top of orange circle
+  ellipse(250, 375, 10, 50); //bottom of orange circle
+  ellipse(125, 250, 50, 10); //left of orange circle
+  ellipse(375, 250, 50, 10); //right of orange circle
+
+  //reset the origin
+  //translate(-250, -250);
+}
