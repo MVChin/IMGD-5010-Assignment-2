@@ -7,7 +7,7 @@ The steps are as follows:
 
 1.  Create a square canvas using the background colour.
 2.  Using contrast colour 1, create a circle on the top of the canvas.  The circle will be    
-    3.  3.  centred on the top edge
+    3.  centred on the top edge
     4.  the diameter will lie on the top edge
     5.  the diameter will be half the width of the canvas
     6.  this will result in a visible half circle within the canvas along the top of the canvas.  The centres of the circles will therefore be
