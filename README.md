@@ -20,7 +20,7 @@ Repeat creating circles on the other three edges of the canvas with matching ori
 4. (canvas width, half canvas height)  
 
 ## Step 3
-Add 2 diagonal lines in contrast colour.  The first diagonal line will run from upper left hand corner to bottom right and the other will run in opposite direction; from the top rignt had corner to the bottom left.  
+Add 2 diagonal lines in contrast colour 2.  The first diagonal line will run from upper left hand corner to bottom right and the other will run in opposite direction; from the top rignt had corner to the bottom left.  
 
 
 ## Step 4
